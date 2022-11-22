@@ -19,7 +19,8 @@
 # change css of link based on path
 - using directive routerLinkActive which gets a class as inp.
 - attach it to the wrapping element or the anchor link itself
-- the link with route as / will always have that class added here is why :-
+- the link with route as / will always have that class added here is why]
+
 ![image](https://user-images.githubusercontent.com/60461699/203029161-7cb5baef-542b-448f-8b85-217f6a78e65c.png)
 - so /users has a / in it ?! wtf.
 - to tackle this we add [routerLinkActiveOptions]="{exact:true}"
@@ -51,8 +52,8 @@
 ![image](https://user-images.githubusercontent.com/60461699/203033973-afc77596-94f7-4d12-898c-be89e3b3cc8d.png)
 
 - use implements onDestroy hook on that component to destroy the subscription yourself or ng will do it for you if you don't hehe
-> we are using rxjs to get this functrionality of observables.
 ![image](https://user-images.githubusercontent.com/60461699/203034874-48bbf9ed-21ea-4cc5-871c-54772268eaaa.png)
+> we are using rxjs to get this functrionality of observables.
 - you have to unsubscribe if u create ur own observables !!
 
 # query params
